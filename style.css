@@ -130,6 +130,7 @@ nav a:hover {
 .section {
   padding: 60px 20px;
   background-color: black;
+  color : white;
 }
 
 /* Destination Card Container */
