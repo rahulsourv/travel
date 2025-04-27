@@ -1,0 +1,199 @@
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header .logoimg {
+  height: 50px;
+  width: auto;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #FFD700; /* Gold color on hover */
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80vh; /* Full screen minus some height for the text */
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .hero-text {
+  color: white;
+  width: 30%; /* 30% of the space for text */
+  padding: 20px;
+  z-index: 1; /* Ensures text is above video */
+  
+  /* Stronger ambient blur effect */
+  background: rgba(0, 0, 0, 0.7); /* Darker background to enhance visibility */
+  backdrop-filter: blur(20px); /* Stronger blur effect */
+  border-radius: 10px; /* Optional: rounded corners for the text area */
+}
+
+.hero .hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero .hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero .hero-text a {
+  background-color: #FFD700;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero .hero-text a:hover {
+  background-color: #ffca28;
+}
+
+/* Video on the right side of the screen */
+.hero .hero-image {
+  width: 70%; /* 70% of the space for the video */
+  height: 100%;
+}
+
+.hero .hero-image video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video fills the space */
+  z-index: 0; /* Keeps video behind text */
+}
+
+
+/* Video on the right side of the screen */
+.hero .hero-image {
+  width: 70%; /* 70% of the space for the video */
+  height: 100%;
+}
+
+.hero .hero-image video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video fills the space */
+  z-index: 0; /* Keeps video behind text */
+}
+
+
+/* Video on the right side of the screen */
+.hero .hero-image {
+  width: 70%; /* 70% of the space for the video */
+  height: 100%;
+}
+
+.hero .hero-image video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video fills the space */
+  z-index: 0; /* Keeps video behind text */
+}
+
+/* Destinations Section */
+.section {
+  padding: 60px 20px;
+  background-color: black;
+}
+
+/* Destination Card Container */
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.destination-card {
+  position: relative;
+  background:  black;
+  
+  backdrop-filter: blur(10px); /* Keep the blur effect */
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.103);
+}
+
+
+/* Image Style */
+.destination-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* City Name Text Style */
+.destination-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: transparent; /* Initially transparent background */
+  transition: transform 0.3s ease, font-size 0.3s ease, background-color 0.3s ease, text-shadow 0.3s ease, border 0.3s ease;
+  z-index: 1; /* Ensure text stays above the image */
+  
+  /* Initially, no text shadow or border */
+  text-shadow: none;
+  border: none;
+}
+
+/* Hover Effects */
+.destination-card:hover .destination-text {
+  transform: translate(-50%, -50%) scale(1.1); /* Zoom in the text on hover */
+  font-size: 35px; /* Increase font size */
+
+}
+
+.destination-card:hover img {
+  transform: scale(1.05); /* Slight zoom out of the image */
+}
+
+
+/* Optional: Hover Shadow */
+.destination-card:hover {
+  transform: scale(0.95); /* Shrink the card */
+  box-shadow: 0 12px 24px rgba(122, 122, 122, 0.6);
+}
