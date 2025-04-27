@@ -185,6 +185,7 @@ nav a:hover {
 .destination-card:hover .destination-text {
   transform: translate(-50%, -50%) scale(1.1); /* Zoom in the text on hover */
   font-size: 35px; /* Increase font size */
+  cursor: pointer;
 
 }
 
