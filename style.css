@@ -197,3 +197,28 @@ nav a:hover {
   transform: scale(0.95); /* Shrink the card */
   box-shadow: 0 12px 24px rgba(122, 122, 122, 0.6);
 }
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #222; /* Dark background to match the header */
+  color: #fff; /* White text */
+  font-size: 16px; /* Slightly smaller text for the footer */
+  position: relative; /* Keeps the footer positioned at the bottom */
+  bottom: 0;
+  width: 100%; /* Ensures the footer spans the entire width */
+}
+
+/* Footer Links */
+footer a {
+  color: #fff; /* White links */
+  text-decoration: none; /* Remove underline */
+  margin: 0 10px;
+  font-size: 14px; /* Slightly smaller font for footer links */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+footer a:hover {
+  color: #FFD700; /* Gold color on hover for the links */
+}
+
